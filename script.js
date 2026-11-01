@@ -1,4 +1,3 @@
-
 // ============================
 // MOBILE NAVIGATION
 // ============================
@@ -30,7 +29,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 // ============================
 
 const revealElements = document.querySelectorAll(
-  ".placeholder-section, .hero-content, .hero-visual"
+  ".placeholder-section, .hero-content, .hero-visual",
 );
 
 revealElements.forEach((element) => {
@@ -47,8 +46,8 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.15
-  }
+    threshold: 0.15,
+  },
 );
 
 revealElements.forEach((element) => {
@@ -62,8 +61,7 @@ revealElements.forEach((element) => {
 const footerText = document.querySelector(".footer p");
 
 if (footerText) {
-  footerText.textContent =
-    `© ${new Date().getFullYear()} Salman. Designed & Developed with care.`;
+  footerText.textContent = `© ${new Date().getFullYear()} Salman. Designed & Developed with care.`;
 }
 
 // ============================
@@ -71,5 +69,4 @@ if (footerText) {
 // ============================
 
 menuToggle.setAttribute("aria-expanded", "false");
-
 console.log("Salman's Portfolio Loaded Successfully!");
